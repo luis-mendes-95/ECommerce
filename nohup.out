@@ -1,0 +1,209 @@
+
+> nest-app@0.0.1 start:dev
+> nest start --watch
+
+c[[90m7:39:27 PM[0m] Starting compilation in watch mode...
+
+
+> nest-app@0.0.1 start:dev
+> nest start --watch
+
+c[[90m7:39:54 PM[0m] Starting compilation in watch mode...
+
+[[90m7:40:05 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +56ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersHistoriesModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProdutosHistoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstoqueHistoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mVendaHistoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mItemVendasModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClienteHistoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOsHistoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mItemOssModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInstrucaoHistoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mReceivablesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComprasModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPayablesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstoqueModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mVendasModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInstrucaosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProdutosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/login}:[39m[38;5;3m +12ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/login, POST} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users-histories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users-histories, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProdutosHistoriesController {/produtos-histories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos-histories, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProdutosController {/produtos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos/:id, PATCH} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/produtos/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstoqueController {/estoque}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstoqueController {/estoque-history}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/estoque-history, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mVendaController {/vendas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/vendas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/vendas, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/vendas/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/vendas/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/vendas/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mVendaController {/venda-history}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/venda-history, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mItemVendaController {/itemVendas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemVendas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemVendas, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemVendas/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemVendas/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemVendas/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClienteController {/clientes}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clientes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clientes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clientes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clientes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clientes/:id, DELETE} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClienteController {/cliente-history}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cliente-history, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOsController {/os}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOsController {/os-history}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/os-history, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mItemOsController {/itemOs}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemOs, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemOs, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemOs/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemOs/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/itemOs/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInstrucaoController {/instrucoes}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucoes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucoes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucoes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucoes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucoes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInstrucaoController {/instrucao-history}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/instrucao-history, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFileController {/files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/files, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/files, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/files/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/files/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/files/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mReceivableController {/receivables}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/receivables, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/receivables, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/receivables/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/receivables/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/receivables/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCompraController {/compras}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/compras, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/compras, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/compras/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/compras/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/compras/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPayableController {/payables}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payables, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payables, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payables/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payables/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payables/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3388  - [39m10/16/2023, 7:40:09 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2267ms[39m
+
+> nest-app@0.0.1 start:dev
+> nest start --watch
+
+c[[90m7:40:44 PM[0m] Starting compilation in watch mode...
+
+c[[90m11:01:34 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:01:35 PM[0m] Found 0 errors. Watching for file changes.
+
+Error: Cannot find module './app.module'
+Require stack:
+- /home/ubuntu/app/dist/main.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:927:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:772:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:93:18)
+    at Object.<anonymous> (/home/ubuntu/app/src/main.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1124:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:816:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+c[[90m11:03:20 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:03:21 PM[0m] Found 0 errors. Watching for file changes.
+
+Error: Cannot find module './app.module'
+Require stack:
+- /home/ubuntu/app/dist/main.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:927:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:772:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:93:18)
+    at Object.<anonymous> (/home/ubuntu/app/src/main.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1124:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:816:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+c[[90m11:03:28 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:03:28 PM[0m] Found 0 errors. Watching for file changes.
+
+Error: Cannot find module './app.module'
+Require stack:
+- /home/ubuntu/app/dist/main.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:927:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:772:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:93:18)
+    at Object.<anonymous> (/home/ubuntu/app/src/main.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1124:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:816:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+c[[90m11:05:44 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:05:45 PM[0m] Found 0 errors. Watching for file changes.
+
+Error: Cannot find module '/home/ubuntu/app/dist/main.js'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:927:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:772:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+    at node:internal/main/run_main_module:17:47
+c[[90m11:05:46 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:05:46 PM[0m] Found 0 errors. Watching for file changes.
+
+Error: Cannot find module '/home/ubuntu/app/dist/main.js'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:927:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:772:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+    at node:internal/main/run_main_module:17:47

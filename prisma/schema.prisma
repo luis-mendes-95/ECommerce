@@ -1,0 +1,541 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+//USUÁRIOS
+//USUÁRIOS QUE TERÃO ACESSO À PLATAFORMA + SEU HISTÓRICO DE EDIÇÃO / 4 TIPOS = ADMINISTRADOR GERAL | EMPREENDEDOR | COLABORADOR | CLIENTE - INICIO//
+model UserHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  cpf_cnpj              String
+  nome_razao_social     String
+  apelido_nome_fantasia String
+  tags                  String[] //ADMINISTRADOR GERAL / EMPREENDEDOR / COLABORADOR / CLIENTE
+  inscricao_estadual    String
+  inscricao_municipal   String
+  cep                   String
+  rua                   String
+  numero                String
+  complemento           String
+  bairro                String
+  cidade                String
+  estado                String
+  telefone              String
+  celular               String
+  email                 String
+  site                  String
+  descricao             String
+  colaboradores         String[]
+  fornecedores          String[]
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("user_histories")
+}
+
+model User {
+  id          String        @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    UserHistory[]
+
+  cpf_cnpj              String
+  nome_razao_social     String
+  apelido_nome_fantasia String
+  tags                  String[] //ADMINISTRADOR GERAL / EMPREENDEDOR / COLABORADOR / CLIENTE
+  inscricao_estadual    String
+  inscricao_municipal   String
+  cep                   String
+  rua                   String
+  numero                String
+  complemento           String
+  bairro                String
+  cidade                String
+  estado                String
+  telefone              String
+  celular               String
+  email                 String   @unique
+  senha                 String
+  site                  String
+  descricao             String
+  colaboradores         String[]
+  fornecedores          String[]
+
+  produtos    Produto[]
+  vendas      Venda[]
+  estoques    Estoque[]
+  os          Os[]
+  arquivos    File[]
+  receivables Receivable[]
+  compras     Compra[]
+  payables    Payable[]
+  clientes    Cliente[]
+
+  @@map("users")
+}
+
+//USUÁRIOS QUE TERÃO ACESSO À PLATAFORMA + SEU HISTÓRICO DE EDIÇÃO / 4 TIPOS = ADMINISTRADOR GERAL | EMPREENDEDOR | COLABORADOR | CLIENTE - FIM//
+
+//PRODUTOS
+//PRODUTOS RELACIONADOS AOS USUÁRIOS EMPREENDEDORES QUE CADASTRAM (+ ESTOQUE), COLABORADORES QUE MANIPULAM E CLIENTE QUE VISUALIZA E COMPRA - INICIO//
+model ProductHistory {
+  id          String @id
+  createdAt   String
+  changeMaker String
+
+  categoria        String
+  marca            String
+  modelo           String
+  cod              String
+  nome             String
+  descricao        String
+  imagem_principal String?
+  imagens          String[]
+  custo            String
+  preco            String
+  qtd              String
+
+  product    Produto @relation(fields: [product_id], references: [id])
+  product_id String
+
+  @@map("product_histories")
+}
+
+model Produto {
+  id          String           @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    ProductHistory[]
+
+  categoria        String
+  marca            String
+  modelo           String
+  cod              String
+  nome             String
+  descricao        String
+  imagem_principal String?
+  imagens          String[]
+  custo            String
+  preco            String
+  user_id          String
+  estoque_id       String?
+
+  user      User        @relation(fields: [user_id], references: [id])
+  qtd       Estoque?    @relation(fields: [estoque_id], references: [id])
+  compras   Compra[]
+  ItemVenda ItemVenda[]
+  ItemOs    ItemOs[]
+
+  @@map("Produtos")
+}
+
+//PRODUTOS RELACIONADOS AOS USUÁRIOS EMPREENDEDORES QUE CADASTRAM (+ ESTOQUE), COLABORADORES QUE MANIPULAM E CLIENTE QUE VISUALIZA E COMPRA - FIM//
+
+//ESTOQUES
+//ESTOQUES CADASTRADOS PELOS EMPREENDEDORES + SEU HISTÓRICO DE EDIÇÃO. TEM RELAÇÃO COM OS PRODUTOS - INICIO//
+model EstoqueHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  nome String
+
+  estoque    Estoque @relation(fields: [estoque_id], references: [id])
+  estoque_id String
+
+  @@map("estoque_histories")
+}
+
+model Estoque {
+  id          String           @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    EstoqueHistory[]
+
+  nome     String //Estoque Lages
+  produtos Produto[] //Produtos inseridos no estoque de Lages
+  user     User      @relation(fields: [user_id], references: [id])
+  user_id  String
+
+  @@map("Estoques")
+}
+
+//ESTOQUES CADASTRADOS PELOS EMPREENDEDORES + SEU HISTÓRICO DE EDIÇÃO. TEM RELAÇÃO COM OS PRODUTOS - FIM//
+
+//VENDAS
+//VENDAS EFETUADAS SEJA PELO EMPREENDEDOR OU COLABORADOR, TEM RELAÇÃO COM PRODUTOS E USUARIO QUE CADASTROU - INICIO//
+model VendaHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  description String
+  itens       String[]
+  os          String[]
+  receivables String[]
+  payables    String[]
+  colaborador String
+
+  venda    Venda  @relation(fields: [venda_id], references: [id])
+  venda_id String
+
+  @@map("venda_histories")
+}
+
+model Venda {
+  id          String         @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    VendaHistory[]
+
+  description String
+  itens       ItemVenda[]
+  os          Os[]
+  receivables Receivable[]
+  payables    Payable[]
+  colaborador String
+
+  client    Cliente @relation(fields: [client_id], references: [id])
+  client_id String
+  user      User    @relation(fields: [user_id], references: [id])
+  user_id   String
+
+  @@map("Vendas")
+}
+
+model ItemVenda {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  description String
+
+  venda    Venda  @relation(fields: [venda_id], references: [id])
+  venda_id String
+
+  produto    Produto @relation(fields: [produto_id], references: [id])
+  produto_id String
+
+  @@map("ItemVenda")
+}
+
+//VENDAS EFETUADAS SEJA PELO EMPREENDEDOR OU COLABORADOR, TEM RELAÇÃO COM PRODUTOS E USUARIO QUE CADASTROU - FIM//
+
+//ORDENS DE SERVIÇO
+//ORDENS DE SERVIÇO GERADAS AUTOMATICAMENTE PELA VENDA (OPCIONAL) OU MANUALMENTE, PELO EMPREENDEDOR, COLABORADOR OU NA HORA DA VENDA PELO CLIENTE - INICIO //
+model OsHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  descricao   String
+  itens       String[]
+  instrucoes  String[]
+  client      String
+  files       String[]
+  payables    String[]
+  receivables String[]
+
+  Os    Os     @relation(fields: [os_id], references: [id])
+  os_id String
+
+  @@map("os_histories")
+}
+
+model Os {
+  id          String      @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    OsHistory[]
+
+  descricao   String
+  itens       ItemOs[]
+  instrucoes  Instrucao[]
+  files       File[]
+  payables    Payable[]
+  receivables Receivable[]
+
+  user      User    @relation(fields: [user_id], references: [id])
+  user_id   String
+  venda     Venda?  @relation(fields: [venda_id], references: [id])
+  venda_id  String?
+  client    Cliente @relation(fields: [client_id], references: [id])
+  client_id String
+
+  @@map("os")
+}
+
+model ItemOs {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  descricao     String
+  tipo_arte     String
+  colaboradores String[]
+
+  instrucoes  Instrucao[]
+  payables    Payable[]
+  receivables Receivable[]
+  files       File[]
+
+  os         Os      @relation(fields: [os_id], references: [id])
+  os_id      String
+  produto    Produto @relation(fields: [produto_id], references: [id])
+  produto_id String
+
+  @@map("ItemOs")
+}
+
+//ORDENS DE SERVIÇO GERADAS AUTOMATICAMENTE PELA VENDA (OPCIONAL) OU MANUALMENTE, PELO EMPREENDEDOR, COLABORADOR OU NA HORA DA VENDA PELO CLIENTE - FIM //
+
+//INSTRUÇÕES DENTRO DAS ORDENS DE SERVIÇO - INICIO//
+model InstrucaoHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  descricao    String
+  arquivos     String[]
+  instrucao    Instrucao @relation(fields: [instrucao_id], references: [id])
+  instrucao_id String
+
+  @@map("instrucao_histories")
+}
+
+model Instrucao {
+  id          String             @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    InstrucaoHistory[]
+
+  descricao String
+  osId      String
+  itemOs_id String
+
+  arquivos File[]
+  os       Os     @relation(fields: [osId], references: [id])
+  itemOs   ItemOs @relation(fields: [itemOs_id], references: [id])
+
+  @@map("Instrucoes") // Opcional: renomeie a tabela do banco de dados, se desejar
+}
+
+//INSTRUÇÕES DENTRO DAS ORDENS DE SERVIÇO - FIM//
+
+//CLIENTES QUE SERAO CADASTRADOS PELOS EMPREENDEDORES OU COLABORADORES - INICIO//
+model ClienteHistory {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  cpf_cnpj              String
+  nome_razao_social     String
+  apelido_nome_fantasia String
+  tags                  String[]
+  inscricao_estadual    String
+  inscricao_municipal   String
+  cep                   String
+  rua                   String
+  numero                String
+  complemento           String
+  bairro                String
+  cidade                String
+  estado                String
+  telefone              String
+  celular               String
+  email                 String
+  site                  String
+  descricao             String
+
+  vendas      String[]
+  os          String[]
+  arquivos    String[]
+  receivables String[]
+  compras     String[]
+  payables    String[]
+
+  cliente    Cliente @relation(fields: [cliente_id], references: [id])
+  cliente_id String
+
+  @@map("cliente_histories")
+}
+
+model Cliente {
+  id          String           @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+  versions    ClienteHistory[]
+
+  cpf_cnpj              String
+  nome_razao_social     String
+  apelido_nome_fantasia String
+  tags                  String[]
+  inscricao_estadual    String
+  inscricao_municipal   String
+  cep                   String
+  rua                   String
+  numero                String
+  complemento           String
+  bairro                String
+  cidade                String
+  estado                String
+  telefone              String
+  celular               String
+  email                 String
+  site                  String
+  descricao             String
+
+  vendas      Venda[]
+  os          Os[]
+  arquivos    File[]
+  receivables Receivable[]
+  compras     Compra[]
+  payables    Payable[]
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+}
+
+//CLIENTES QUE SERAO CADASTRADOS PELOS EMPREENDEDORES OU COLABORADORES - FIM//
+
+//ARQUIVOS DOS CLIENTES E USUÁRIOS - INICIO//
+model File {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  filename String
+  filetype String
+  filesize String
+  link     String
+
+  user      User    @relation(fields: [user_id], references: [id])
+  user_id   String
+  client    Cliente @relation(fields: [client_id], references: [id])
+  client_id String
+
+  os    Os?     @relation(fields: [os_id], references: [id])
+  os_id String?
+
+  itemOs    ItemOs? @relation(fields: [itemOs_id], references: [id])
+  itemOs_id String?
+
+  instrucao    Instrucao? @relation(fields: [instrucao_id], references: [id])
+  instrucao_id String?
+
+  @@map("files")
+}
+
+//ARQUIVOS DOS CLIENTES E USUÁRIOS - FIM//
+
+//TÍTULOS A RECEBER - INICIO//
+model Receivable {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  status       String
+  amount       String
+  receivements String[]
+  description  String
+
+  user_id String
+  user    User   @relation(fields: [user_id], references: [id])
+
+  client_id String
+  client    Cliente @relation(fields: [client_id], references: [id])
+
+  venda_id String?
+  venda    Venda?  @relation(fields: [venda_id], references: [id])
+
+  os    Os?     @relation(fields: [os_id], references: [id])
+  os_id String?
+
+  itemOs    ItemOs? @relation(fields: [itemOs_id], references: [id])
+  itemOs_id String?
+
+  @@map("receivables")
+}
+
+//TÍTULOS A RECEBER- FIM//
+
+//COMPRAS - INICIO//
+model Compra {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  description String
+
+  products Produto[]
+  payables Payable[]
+
+  user_id String
+  user    User   @relation(fields: [user_id], references: [id])
+
+  supplier_id String
+  supplier    Cliente @relation(fields: [supplier_id], references: [id])
+}
+
+//COMPRAS - FIM//
+
+//TÍTULOS A PAGAR - INICIO//********************************************************************************************************
+model Payable {
+  id          String @id
+  createdAt   String
+  lastEditted String
+  changeMaker String
+
+  status      String
+  amount      String
+  payments    String[]
+  description String
+
+  compra_id String?
+  compra    Compra? @relation(fields: [compra_id], references: [id])
+
+  user_id String?
+  user    User?   @relation(fields: [user_id], references: [id])
+
+  client_id String?
+  client    Cliente? @relation(fields: [client_id], references: [id])
+
+  vendaId String?
+  Venda   Venda?  @relation(fields: [vendaId], references: [id])
+
+  Os   Os?     @relation(fields: [osId], references: [id])
+  osId String?
+
+  ItemOs   ItemOs? @relation(fields: [itemOsId], references: [id])
+  itemOsId String?
+
+  @@map("payables")
+}
+
+//TÍTULOS A PAGAR - FIM//********************************************************************************************************

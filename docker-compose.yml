@@ -1,0 +1,31 @@
+version: '3.9'
+
+services: 
+  backend:
+    container_name: tejas-backend
+    build: 
+      context: ./
+    ports:
+      - $PORT:$PORT
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "npx prisma migrate dev && npm run start:dev"
+    volumes:
+      - ./:/app
+
+  db:
+    container_name: db
+    image: postgres:14
+    ports:
+      - 5431:5432
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
